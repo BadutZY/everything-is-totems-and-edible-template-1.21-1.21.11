@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "craftable-items",
-	"version": "1.0.1",
-	"name": "Craftable Items",
-	"description": "Make uncraftable items Craftable",
+	"id": "everything-totem",
+	"version": "${version}",
+	"name": "Everything is Totem and Edible",
+	"description": "You can eat every item in Minecraft or turn it into something like a totem.",
 	"authors": [
 		"BadutZY"
 	],
@@ -11,24 +11,25 @@
 		"homepage": "https://modrinth.com/user/BadutZY"
 	},
 	"license": "MIT",
-	"icon": "assets/craftable/icon.png",
+	"icon": "assets/everything-totem/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.craftable.CraftableItems"
+			"com.example.everythingtotem.EverythingTotem"
 		],
-		"fabric-datagen": [
-			"com.example.craftable.CraftableItemsDataGenerator"
+		"client": [
+			"com.example.everythingtotem.EverythingTotemClient"
 		]
 	},
 	"mixins": [
-		"craftable.mixins.json"
+		"everything.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.10",
-		"minecraft": "~1.21.4",
+		"fabricloader": "*",
+		"minecraft": "~1.21",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"cloth-config": "*"
 	},
 	"suggests": {
 		"another-mod": "*"
