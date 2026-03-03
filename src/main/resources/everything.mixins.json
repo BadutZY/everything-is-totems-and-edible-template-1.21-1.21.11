@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "com.example.everythingtotem.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ItemMixin",
+		"ItemStackMixin"
+	],
+	"client": [
+		"client.GameRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
